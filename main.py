@@ -17,7 +17,7 @@ async def set_commands_telegram(bot: Bot):
     await bot.set_my_commands(main_menu_commands)
 
 
-async def main():
+async def main() -> None:
     config: Config = load_config(
         'C:\\Users\\Амир\\Desktop\\python работы\\bot rock scissors paper\\.env')
     logger = logging.getLogger(__name__)
